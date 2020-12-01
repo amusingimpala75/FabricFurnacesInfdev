@@ -1,0 +1,31 @@
+accessWidener	v1	named
+
+extendable class net/minecraft/block/FurnaceBlock
+accessible   field   net/minecraft/block/FurnaceBlock   list   Z
+extendable   method   net/minecraft/block/FurnaceBlock   createTileEntity   ()Lnet/minecraft/block/tile/TileEntity;
+extendable   method   net/minecraft/block/FurnaceBlock   use   (Lnet/minecraft/world/World;IIILnet/minecraft/entity/living/Player;)Z
+extendable   method   net/minecraft/block/FurnaceBlock   getTextureIndex   (I)I
+extendable   method   net/minecraft/block/FurnaceBlock   randomDisplayTick   (Lnet/minecraft/world/World;IIILjava/util/Random;)V
+extendable   method   net/minecraft/block/FurnaceBlock   getMetaTextureIndex   (Lnet/minecraft/world/World;IIII)I
+extendable   method   net/minecraft/block/FurnaceBlock   method_153   (Lnet/minecraft/world/World;III)V
+extendable   method   net/minecraft/block/FurnaceBlock   onPlace   (Lnet/minecraft/world/World;III)V
+extendable   method   net/minecraft/block/tile/Furnace   size   ()I
+extendable   method   net/minecraft/block/tile/Furnace   get   (I)Lnet/minecraft/item/ItemStack;
+extendable   method   net/minecraft/block/tile/Furnace   damage   (II)Lnet/minecraft/item/ItemStack;
+extendable   method   net/minecraft/block/tile/Furnace   set   (ILnet/minecraft/item/ItemStack;)V
+extendable   method   net/minecraft/block/tile/Furnace   getName   ()Ljava/lang/String;
+extendable   method   net/minecraft/block/tile/Furnace   deserialize  (Lnet/minecraft/nbt/CompoundTag;)V
+extendable   method   net/minecraft/block/tile/Furnace   serialize  (Lnet/minecraft/nbt/CompoundTag;)V
+extendable   method   net/minecraft/block/tile/Furnace   method_294  ()I
+extendable   method   net/minecraft/block/tile/Furnace   method_77  (I)I
+extendable   method   net/minecraft/block/tile/Furnace   method_78  (I)I
+extendable   method   net/minecraft/block/tile/Furnace   method_80  ()Z
+extendable   method   net/minecraft/block/tile/Furnace   tick  ()V
+extendable   method   net/minecraft/block/tile/Furnace   method_81  ()Z
+extendable   method   net/minecraft/block/tile/Furnace   getSmeltedId  (I)I
+extendable   method   net/minecraft/block/tile/Furnace   getBurnTime  (Lnet/minecraft/item/ItemStack;)I
+extendable   method   net/minecraft/block/tile/Furnace   method_73  ()V
+accessible   field   net/minecraft/block/tile/Furnace   stacks   [Lnet/minecraft/item/ItemStack;
+accessible   field   net/minecraft/block/FurnaceBlock   field_80   I
+accessible   field   net/minecraft/block/FurnaceBlock   field_81   I
+accessible   field   net/minecraft/block/FurnaceBlock   field_82   I

@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.github.amusingimpala75.fabricFurnacesInfdev.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ClientWorldManagerTextureManagerAddTextures",
+    "FurnaceAccessors",
+    "RecipeMixin",
+    "TileEntityRegisterInvoker"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
