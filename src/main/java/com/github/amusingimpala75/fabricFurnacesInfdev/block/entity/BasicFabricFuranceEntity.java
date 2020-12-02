@@ -25,7 +25,9 @@ public class BasicFabricFuranceEntity extends Furnace {
         this.name = name;
         this.replaceIdLit = replaceIdLit;
         this.replaceIdUnlit = replaceIdUnlit;
-        TileEntityRegisterInvoker.invokeRegister(this.getClass(), "base_fabric_furnace");
+    }
+    public BasicFabricFuranceEntity() {
+        super();
     }
 
     //@Override
@@ -53,15 +55,25 @@ public class BasicFabricFuranceEntity extends Furnace {
         return name;
     }
 
-    //@Override
-    //public void deserialize(CompoundTag tag) {
-    //    super.deserialize(tag);
-    //}
+    @Override
+    public void deserialize(CompoundTag tag) {
+        super.deserialize(tag);
+        this.speedMultiplier = tag.getFloat("speed_multiplier");
+        this.fuelMultiplier = tag.getFloat("fuel_modifier");
+        this.name = tag.getString("name");
+        this.replaceIdUnlit = tag.getInt("replace_id_unlit");
+        this.replaceIdLit = tag.getInt("replace_id_lit");
+    }
 
-    //@Override
-    //public void serialize(CompoundTag tag) {
-    //    super.serialize(tag);
-    //}
+    @Override
+    public void serialize(CompoundTag tag) {
+        super.serialize(tag);
+        tag.putFloat("speed_multiplier", this.speedMultiplier);
+        tag.putFloat("fuel_multiplier", this.fuelMultiplier);
+        tag.putString("name", this.name);
+        tag.putInt("replace_id_unlit", this.replaceIdUnlit);
+        tag.putInt("replace_id_lit", this.replaceIdLit);
+    }
 
     //@Override
     //public int method_294() {

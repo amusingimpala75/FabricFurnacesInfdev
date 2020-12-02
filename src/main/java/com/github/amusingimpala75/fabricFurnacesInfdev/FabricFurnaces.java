@@ -1,6 +1,8 @@
 package com.github.amusingimpala75.fabricFurnacesInfdev;
 
 import com.github.amusingimpala75.fabricFurnacesInfdev.block.*;
+import com.github.amusingimpala75.fabricFurnacesInfdev.block.entity.BasicFabricFuranceEntity;
+import com.github.amusingimpala75.fabricFurnacesInfdev.mixin.TileEntityRegisterInvoker;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -39,6 +41,7 @@ public class FabricFurnaces implements ModInitializer {
         OBSIDIAN_FURNACE = new ObsidianFurnace(108, 169, 108, 109);
         OBSIDIAN_FURNACE_LIT = new ObsidianFurnaceLit(109, 169, 108, 109);
         OBSIDIAN_FURNACE_ITEM = registerBlockItem(OBSIDIAN_FURNACE);
+        TileEntityRegisterInvoker.invokeRegister(BasicFabricFuranceEntity.class, "base_fabric_furnace");
     }
 
     public static BlockItem registerBlockItem(Block block) {
